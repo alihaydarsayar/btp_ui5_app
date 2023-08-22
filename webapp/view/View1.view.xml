@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="sap.btp.helloworldui5.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    height="100%"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <l:ResponsiveSplitter>
+            <l:PaneContainer orientation="Vertical">
+                <l:SplitPane>
+                    <l:layoutData>
+                        <l:SplitterLayoutData size="70%" />
+                    </l:layoutData>
+                    <IllustratedMessage id="ilm1"
+                        enableVerticalResponsiveness="true"
+                        illustrationType="sapIllus-SuccessBalloon"
+                        title="alihaydarsayar example"
+                    >
+                        <additionalContent>
+                            <Button id="but1" text="Alert" class="sapUiSmallMarginBottom" press=".onAlertMessageBoxPress" width="280px" ariahaspopup="Dialog"/>
+                        </additionalContent>
+                    </IllustratedMessage>
+                </l:SplitPane>
+                <l:SplitPane>
+                    <VBox />
+                </l:SplitPane>
+            </l:PaneContainer>
+        </l:ResponsiveSplitter>
+        <content />
+    </Page>
+</mvc:View>
